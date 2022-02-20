@@ -52,7 +52,7 @@ font-size: 2rem;
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	font-family: 'Azeret Mono', monospace;
 	color: var(--secondary-gray);
 	line-height: 1.6;
@@ -146,6 +146,38 @@ a {
   transform-origin: bottom left;
 }
 
+/* global style mobile */
+
+@media only screen and (max-width: 768px) {
+	
+html {
+		font-size: 10px;
+	}
+
+h1 {
+		font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+a {
+	font-size: 1.4rem;
+}
+
+p{
+	font-size: 1.4rem;
+}
+
+.primary-btn {
+	font-size: 1.4rem;
+}
+
 
 /* scroll Top/Up Button */
 .scroll-top {
@@ -206,7 +238,6 @@ a {
 	height: 100%;
 	z-index: 100;
 	background-color: var(--primary-yellow);
-	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -294,21 +325,20 @@ a {
 		right: 10px;
 		top: 10px;
 	}
+
+	#navigation .nav-icon {
+	width: 60px;
+	height: 60px;
+}
+
 	#nav-content nav ul li a::after {
 		display: none;
 	}
-	#nav-content .section-heading {
-		text-align: right;
-		margin-bottom: 5rem;
-	}
-	#nav-content .section-heading::before {
-		text-align: right;
-	}
 	#nav-content nav ul {
-		text-align: right;
+		text-align: left;
 	}
 	#nav-content nav ul li a {
-		font-size: 2.5rem;
+		font-size: 3.2rem;
 	}
 	#nav-content .wrapper {
 		width: 90%;
@@ -401,9 +431,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-	html {
-		font-size: 14px;
-	}
+
 	#hero .container {
 		flex-direction: column-reverse;
 	}
@@ -412,6 +440,10 @@ a {
 		width: 100%;
 		flex: 1;
 		margin-bottom: 3rem;
+	}
+		#hero .right img {
+		width: 156px;
+		height: 156px;
 	}
 	#hero .container .left {
 		text-align: left;
@@ -423,18 +455,15 @@ a {
 		justify-content: center;
 	}
 	#hero .left .heading {
-		font-size: 3rem;
 		margin: 0 auto;
 	}
 	#hero .container .left .desc {
+		font-size: 1.4rem;
 		margin: 0 auto;
 		margin-top: 2rem;
 	}
-	#hero .right img {
-		width: 156px;
-		height: 156px;
-	}
 }
+
 @media only screen and (max-width: 950px) {
 	#hero .container .right {
 		flex: 6;
