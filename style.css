@@ -322,14 +322,13 @@ p{
 
 @media only screen and (max-width: 768px) {
 	#navigation {
-		right: 10px;
-		top: 10px;
+		right: 8px;
+		top: 8px;
 	}
 
 	#navigation .nav-icon {
     display: inline-block; 
-    background: #a02620;
-    padding: 10px;
+    padding: 8px;
 }
 
 	#nav-content nav ul li a::after {
