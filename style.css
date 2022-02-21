@@ -210,6 +210,12 @@ p{
 	transform: scale(1);
 }
 
+@media only screen and (max-width: 768px) {
+	.scroll-top {
+		right: 8px;
+		bottom: 8px;
+	}
+
 /* Navigation Section */
 #navigation {
 	position: fixed;
