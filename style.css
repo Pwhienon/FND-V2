@@ -229,7 +229,7 @@ p{
 	justify-content: center;
 }
 #navigation .nav-icon svg {
-	color: var(--primary-white;
+	color: var(--primary-yellow);
 }
 #nav-content {
 	position: fixed;
@@ -268,7 +268,7 @@ p{
 #nav-content ul li a {
 	display: inline-block;
 	width: 100%;
-  background: var(--body-bg);
+	color: var(--body-bg);
 	font-size: 5rem;
 	font-family: 'Azeret Mono', monospace;
 	/* position: relative; */
@@ -282,7 +282,7 @@ p{
   background: none repeat scroll 0 0 transparent;
   height: 2px;
   width: 0;
-  background: var(--body-bg);
+	background-color: var(--body-bg);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 
 }
@@ -307,7 +307,7 @@ p{
 }
 
 #nav-content .close-btn:hover {
-	background-color: #0B0F2A;
+	background-color: var(--body-bg);
 }
 
 #nav-content .close-btn svg {
@@ -316,7 +316,7 @@ p{
 }
 #nav-content .close-btn svg:hover {
 	width: 80%;
-	color: #FFFFFF;
+	color: var(--primary-white);
 	transition: 0.3s ease background-color;
 }
 
@@ -327,8 +327,9 @@ p{
 	}
 
 	#navigation .nav-icon {
-	width: 60px;
-	height: 60px;
+    display: inline-block; 
+    background: #a02620;
+    padding: 10px;
 }
 
 	#nav-content nav ul li a::after {
