@@ -528,6 +528,11 @@ p{
 		padding-right: 1rem;
 		gap: 50px;
 	}
+
+	#releases .primary-btn{
+		margin-right: 3rem;
+	}
+
 }
 
 /* artists section */
