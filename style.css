@@ -244,6 +244,7 @@ p{
 	overflow: hidden;
 	transform: translateX(100%);
 	transition: 0.3s ease transform;
+		background-color: var(--primary-yellow);
 }
 #nav-content.show {
 	transform: translateX(0);
@@ -251,7 +252,6 @@ p{
 	border-left-style: solid;
 	border-color: #D6EE1E;
 	border-width: 6px; */
-	background-color: var(--primary-yellow);
 }
 
 #nav-content .wrapper {
