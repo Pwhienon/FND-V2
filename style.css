@@ -232,6 +232,7 @@ p{
 	color: var(--primary-yellow);
 }
 #nav-content {
+	background-color: var(--primary-yellow);
 	position: fixed;
 	right: 0;
 	width: 80%;
@@ -244,8 +245,8 @@ p{
 	overflow: hidden;
 	transform: translateX(100%);
 	transition: 0.3s ease transform;
-		background-color: var(--primary-yellow);
 }
+
 #nav-content.show {
 	transform: translateX(0);
 	/* box-shadow: -6px 0px 29px 7px #000000a3; 
@@ -258,6 +259,7 @@ p{
 	width: 70%;
 	position: relative;
 }
+
 #nav-content ul {
 	list-style: none;
 	text-align: left;
