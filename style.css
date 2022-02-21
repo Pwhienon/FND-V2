@@ -215,6 +215,7 @@ p{
 		right: 8px;
 		bottom: 8px;
 	}
+}
 
 /* Navigation Section */
 #navigation {
@@ -475,7 +476,7 @@ p{
 
 /* releases section */
 #releases {
-	padding: 16rem 0 8rem 0;
+	padding: 16rem 0 0 0;
 }
 
 #releases .all-items {
@@ -531,7 +532,7 @@ p{
 
 /* artists section */
 #artists {
-	padding: 16rem 0 0 0;
+	padding: 16rem 0 8rem 0;
 }
 
 #artists .all-items {
