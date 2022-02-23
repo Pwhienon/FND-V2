@@ -326,8 +326,8 @@ p{
 
 @media only screen and (max-width: 768px) {
 	#navigation {
-		right: 8px;
-		top: 8px;
+		right: 2px;
+		top: 2px;
 	}
 
 	#navigation .nav-icon {
