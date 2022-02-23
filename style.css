@@ -332,12 +332,21 @@ p{
 		top: 2px;
 	}
 #navigation .nav-icon svg {
-	border: solid;
-	border-width: 2px;
-	border-color: var(--primary-yellow);
-	width: 40px;
-	height: 40px;
+		border: solid;
+		border-top-width: 2px;
+		border-bottom-width: 2px;
+		border-left-width: 2px;
+		border-right-width: 2px;
+		border-color: var(--primary-yellow);
+	width: 50px;
+	height: 50px;
 	}
+
+	/* #navigation .nav-icon {
+    display: inline-block; 
+    padding: 8px;
+} */
+
 
 	#nav-content nav ul li a::after {
 		display: none;
