@@ -186,6 +186,7 @@ p{
 	height: 60px;
 	width: 60px;
 	color: var(--primary-yellow);
+	background-color: var(--body-bg);
 	position: fixed;
 	bottom: 20px;
 	right: 50px;
@@ -237,6 +238,7 @@ p{
 }
 #navigation .nav-icon svg {
 	color: var(--primary-yellow);
+	background-color: var(--body-bg);
 }
 #nav-content {
 	background-color: var(--primary-yellow);
@@ -258,7 +260,7 @@ p{
 	transform: translateX(0);
 	/* box-shadow: -6px 0px 29px 7px #000000a3; 
 	border-left-style: solid;
-	border-color: #D6EE1E;
+	border-color: var(--body-bg);
 	border-width: 6px; */
 }
 
@@ -329,11 +331,13 @@ p{
 		right: 2px;
 		top: 2px;
 	}
-
-	#navigation .nav-icon {
-    display: inline-block; 
-    padding: 8px;
-}
+#navigation .nav-icon svg {
+	border: solid;
+	border-width: 2px;
+	border-color: var(--primary-yellow);
+	width: 40px;
+	height: 40px;
+	}
 
 	#nav-content nav ul li a::after {
 		display: none;
@@ -586,7 +590,7 @@ p{
 /* Podcast & Radio section  */
 #podcast-radio {
 	padding: 8rem 0 8rem 0;
-	background-color: var(--primary-yellow);
+	background-color: var(--primary-yellow);	
 }
 
 #podcast-radio .wrapper {
