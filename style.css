@@ -671,10 +671,13 @@ p{
 		justify-content: left;
 		text-align: left;
 	}
-	#footer .left a{
-		font-size: 1rem;
+#footer .container .left {
+			flex: 1;
+		}
 
-	}
+#footer .container .right {
+			flex: 2;
+		}
 
 	#footer footer .left,
 	#footer footer .right {
@@ -697,6 +700,7 @@ p{
 @media only screen and (max-width: 768px) {
 	#copyright p {
 		text-align: left;
+		font-size: 1rem;
 	}
 }
 
