@@ -757,7 +757,8 @@ p{
 }
 
 #footer .right img {
-	width: 20%;
+	width: 120px;
+	height: 120px;
 	object-fit: cover;
 }
 
@@ -782,7 +783,8 @@ p{
 	}
 
 	#footer .right img {
-	width: 50%;
+	width: 120px;
+	height: 120px;
 }
 
 /* copyright Section */
