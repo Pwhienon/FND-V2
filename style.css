@@ -10,6 +10,20 @@
 }
 
 /* global styles */
+button {
+	font: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+button:focus-visible,
+a:focus-visible {
+	outline: 2px solid var(--primary-yellow);
+	outline-offset: 3px;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -181,7 +195,7 @@ p{
 
 /* global style tablet */
 
-@media only screen and (min-device-width : 769px) and (max-device-width : 1080px){
+@media only screen and (min-width : 769px) and (max-width : 1080px){
 html {
 		font-size: 14px;
 	}
@@ -250,7 +264,7 @@ p{
 	}
 }
 /* Tablet */
-@media only screen and (min-device-width : 769px) and (max-device-width : 1080px){
+@media only screen and (min-width : 769px) and (max-width : 1080px){
 	.scroll-top {
 		right: 8px;
 		bottom: 8px;
@@ -403,7 +417,7 @@ p{
 }
 
 /* Tablet */
-@media only screen and (min-device-width : 769px) and (max-device-width : 1080px){
+@media only screen and (min-width : 769px) and (max-width : 1080px){
 	#navigation {
 		right: 2px;
 		top: 2px;
@@ -559,7 +573,7 @@ p{
 }
 
 /* Tablet */
-@media only screen and (min-device-width : 769px) and (max-device-width : 1080px){
+@media only screen and (min-width : 769px) and (max-width : 1080px){
 
 #hero .container {
 	display: flex;
@@ -601,8 +615,9 @@ p{
 }
 
 #releases .img {
-	width: 356px;
-	height: 356px;
+	width: 100%;
+	max-width: 356px;
+	aspect-ratio: 1 / 1;
 	overflow: hidden;
 	/* margin: 0 auto; */
 	margin-bottom: 1rem;
@@ -662,8 +677,9 @@ p{
 
 #artists .img {
 	overflow: hidden;
-	width: 356px;
-	height: 356px;
+	width: 100%;
+	max-width: 356px;
+	aspect-ratio: 1 / 1;
 	margin-bottom: 1rem;
 }
 #artists .img img {
@@ -700,9 +716,14 @@ p{
 
 #podcast-radio .wrapper {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	gap: 30px;
+}
+
+#podcast-radio .left-player,
+#podcast-radio .right-player {
+	flex: 1;
 }
 
 #podcast-radio .podcast-player{
@@ -723,8 +744,7 @@ p{
 /* Mobile */
 @media only screen and (max-width: 768px) {
 	#podcast-radio .wrapper {
-		flex-direction: column-reverse;
-		text-align: center;
+		flex-direction: column;
 	}
 	#podcast-radio .right .buttons {
 		flex-direction: column;
@@ -786,22 +806,20 @@ p{
 	width: 120px;
 	height: 120px;
 }
+}
 
 /* copyright Section */
-	#copyright {
+#copyright {
 	padding: 2rem 0 0 0;
-	background-color: var(--body-bg: #0B0F2A);
-	}
-	#copyright p {
-	font-size: 0.5rem;
+	background-color: var(--body-bg);
+}
+#copyright p {
+	font-size: 0.75rem;
 	margin: 1rem;
-	}
+}
 @media only screen and (max-width: 768px) {
 	#copyright p {
 		text-align: left;
 		font-size: 1rem;
 	}
 }
-
-
-
